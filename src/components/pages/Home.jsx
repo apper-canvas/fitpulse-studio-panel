@@ -12,7 +12,7 @@ import Badge from '@/components/atoms/Badge';
 import Loading from '@/components/ui/Loading';
 import Error from '@/components/ui/Error';
 import ApperIcon from '@/components/ApperIcon';
-import { getClasses } from '@/services/api/classService';
+import { getClasses, bookClass } from '@/services/api/classService';
 import { getTrainers } from '@/services/api/trainerService';
 import { getMembershipPlans } from '@/services/api/membershipService';
 
@@ -52,10 +52,50 @@ const Home = () => {
     } finally {
       setLoading(false);
     }
-  };
+};
 
-  const handleBookClass = (classData) => {
-    toast.success(`Successfully booked ${classData.name}!`);
+  const handleBookClass = async (classData) => {
+    try {
+      // Check if class is already full
+      const availableSpots = classData.capacity - classData.enrolled;
+      if (availableSpots <= 0) {
+        toast.warning(`${classData.name} is currently full. Please try again later.`);
+        return;
+      }
+
+      // Show loading toast
+      const loadingToast = toast.loading(`Booking ${classData.name}...`);
+      
+      // Call booking service
+      const updatedClass = await bookClass(classData.Id);
+      
+      // Update local state to reflect the booking
+      setFeaturedClasses(prev => 
+        prev.map(cls => 
+          cls.Id === classData.Id 
+            ? { ...cls, enrolled: updatedClass.enrolled }
+            : cls
+        )
+      );
+
+      // Show success message
+      toast.update(loadingToast, {
+        render: `Successfully booked ${classData.name}! You're enrolled.`,
+        type: 'success',
+        isLoading: false,
+        autoClose: 3000
+      });
+
+    } catch (error) {
+      console.error('Error booking class:', error);
+      
+      // Show appropriate error message
+      const errorMessage = error.message === 'Class is full' 
+        ? `${classData.name} became full while you were booking. Please try a different class.`
+        : `Failed to book ${classData.name}. Please try again.`;
+      
+      toast.error(errorMessage);
+    }
   };
 
   const handleSelectMembership = (plan) => {
