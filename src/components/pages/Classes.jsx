@@ -57,15 +57,16 @@ const Classes = () => {
     }
 
     // Apply sorting
-    filtered.sort((a, b) => {
+filtered.sort((a, b) => {
       switch (sortBy) {
         case 'name':
           return a.name.localeCompare(b.name);
         case 'time':
           return a.time?.localeCompare(b.time) || 0;
-        case 'difficulty':
+        case 'difficulty': {
           const difficultyOrder = { 'Beginner': 1, 'Intermediate': 2, 'Advanced': 3 };
           return difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty];
+        }
         case 'capacity':
           return (a.capacity - a.enrolled) - (b.capacity - b.enrolled);
         default:
@@ -116,15 +117,16 @@ const Classes = () => {
     }
 
     // Apply sorting
-    filtered.sort((a, b) => {
+filtered.sort((a, b) => {
       switch (sortBy) {
         case 'name':
           return a.name.localeCompare(b.name);
         case 'time':
           return a.time?.localeCompare(b.time) || 0;
-        case 'difficulty':
+        case 'difficulty': {
           const difficultyOrder = { 'Beginner': 1, 'Intermediate': 2, 'Advanced': 3 };
           return difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty];
+        }
         case 'capacity':
           return (a.capacity - a.enrolled) - (b.capacity - b.enrolled);
         default:

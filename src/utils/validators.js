@@ -6,7 +6,7 @@ export const isValidEmail = (email) => {
 
 // Phone number validation
 export const isValidPhoneNumber = (phone) => {
-  const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+  const phoneRegex = /^[+]?[1-9][\d]{0,15}$/;
   const cleaned = phone.replace(/\D/g, '');
   return phoneRegex.test(cleaned) && cleaned.length >= 10;
 };
