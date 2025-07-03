@@ -104,7 +104,7 @@ const ClassCard = ({ classData, onBook }) => {
         </div>
       </div>
 
-      <div className="flex gap-2 pt-4 border-t border-gray-100">
+<div className="flex gap-2 pt-4 border-t border-gray-100">
         <Button
           as={Link}
           to={`/classes/${Id}`}
@@ -112,7 +112,7 @@ const ClassCard = ({ classData, onBook }) => {
           size="small"
           className="flex-1"
         >
-View Details
+          View Details
         </Button>
         <Button
           onClick={() => {
