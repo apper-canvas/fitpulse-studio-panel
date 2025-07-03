@@ -125,16 +125,16 @@
 .glass {
   @apply backdrop-blur-lg bg-white/20 border border-white/30;
 }
+/* Custom elevation shadows wrapped in @layer utilities */
+@layer utilities {
+  .shadow-custom {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  }
 
-/* Custom elevation shadows */
-.shadow-custom {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  .shadow-custom-lg {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+  }
 }
-
-.shadow-custom-lg {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
-}
-
 /* Custom form styling */
 .form-input {
   @apply w-full px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none;
