@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "planId": "basic",
+    "name": "Basic",
+    "price": 49,
+    "duration": "month",
+    "description": "Perfect for getting started with your fitness journey",
+    "features": [
+      "Access to gym equipment during standard hours",
+      "2 group fitness classes per week",
+      "Basic locker room access",
+      "Free initial fitness assessment",
+      "Online class booking",
+      "Mobile app access"
+    ],
+    "classAccess": "2 classes per week"
+  },
+  {
+    "Id": 2,
+    "planId": "premium",
+    "name": "Premium",
+    "price": 79,
+    "duration": "month",
+    "description": "Most popular choice with unlimited classes and premium features",
+    "features": [
+      "24/7 gym access",
+      "Unlimited group fitness classes",
+      "Premium locker room with towel service",
+      "Monthly personal training session",
+      "Nutrition consultation",
+      "Priority class booking",
+      "Guest pass (2 per month)",
+      "Access to premium equipment area",
+      "Complimentary fitness assessments"
+    ],
+    "classAccess": "Unlimited classes"
+  },
+  {
+    "Id": 3,
+    "planId": "elite",
+    "name": "Elite",
+    "price": 129,
+    "duration": "month",
+    "description": "Ultimate fitness experience with premium perks and services",
+    "features": [
+      "24/7 gym access",
+      "Unlimited group fitness classes",
+      "Premium locker room with towel service",
+      "4 personal training sessions per month",
+      "Nutrition coaching and meal planning",
+      "Priority class booking and front-row spots",
+      "Unlimited guest passes",
+      "Access to all premium areas",
+      "Complimentary massage (monthly)",
+      "Private training studio access",
+      "Supplement discounts",
+      "Exclusive member events"
+    ],
+    "classAccess": "Unlimited classes + priority booking"
+  }
+]

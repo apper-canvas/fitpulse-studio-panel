@@ -1,0 +1,182 @@
+[
+  {
+    "Id": 1,
+    "name": "Morning Power Yoga",
+    "type": "Yoga",
+    "trainer": "Sarah Johnson",
+    "duration": 60,
+    "difficulty": "Beginner",
+    "capacity": 20,
+    "enrolled": 15,
+    "time": "7:00 AM",
+    "description": "Start your day with energizing yoga flows that build strength and flexibility. Perfect for beginners looking to develop a consistent practice.",
+    "equipment": ["Yoga Mat", "Yoga Blocks"],
+    "schedule": [
+      {"day": "Monday", "time": "7:00 AM - 8:00 AM"},
+      {"day": "Wednesday", "time": "7:00 AM - 8:00 AM"},
+      {"day": "Friday", "time": "7:00 AM - 8:00 AM"}
+    ]
+  },
+  {
+    "Id": 2,
+    "name": "HIIT Blast",
+    "type": "HIIT",
+    "trainer": "Mike Chen",
+    "duration": 45,
+    "difficulty": "Advanced",
+    "capacity": 15,
+    "enrolled": 12,
+    "time": "6:00 PM",
+    "description": "High-intensity interval training that combines cardio and strength for maximum calorie burn. Push your limits and see results fast.",
+    "equipment": ["Dumbbells", "Resistance Bands", "Exercise Mat"],
+    "schedule": [
+      {"day": "Tuesday", "time": "6:00 PM - 6:45 PM"},
+      {"day": "Thursday", "time": "6:00 PM - 6:45 PM"},
+      {"day": "Saturday", "time": "10:00 AM - 10:45 AM"}
+    ]
+  },
+  {
+    "Id": 3,
+    "name": "Strength Foundation",
+    "type": "Strength",
+    "trainer": "David Kim",
+    "duration": 50,
+    "difficulty": "Intermediate",
+    "capacity": 12,
+    "enrolled": 8,
+    "time": "5:30 PM",
+    "description": "Build a solid foundation of strength with proper form and progressive training. Learn the fundamentals of weightlifting safely.",
+    "equipment": ["Barbells", "Dumbbells", "Bench"],
+    "schedule": [
+      {"day": "Monday", "time": "5:30 PM - 6:20 PM"},
+      {"day": "Wednesday", "time": "5:30 PM - 6:20 PM"},
+      {"day": "Friday", "time": "5:30 PM - 6:20 PM"}
+    ]
+  },
+  {
+    "Id": 4,
+    "name": "Zen Flow Yoga",
+    "type": "Yoga",
+    "trainer": "Emily Rodriguez",
+    "duration": 75,
+    "difficulty": "Intermediate",
+    "capacity": 18,
+    "enrolled": 14,
+    "time": "8:00 AM",
+    "description": "Peaceful yoga practice focusing on breath and mindfulness. Perfect for stress relief and mental clarity.",
+    "equipment": ["Yoga Mat", "Bolster", "Blanket"],
+    "schedule": [
+      {"day": "Tuesday", "time": "8:00 AM - 9:15 AM"},
+      {"day": "Thursday", "time": "8:00 AM - 9:15 AM"},
+      {"day": "Sunday", "time": "9:00 AM - 10:15 AM"}
+    ]
+  },
+  {
+    "Id": 5,
+    "name": "Cardio Dance",
+    "type": "Dance",
+    "trainer": "Lisa Thompson",
+    "duration": 50,
+    "difficulty": "Beginner",
+    "capacity": 25,
+    "enrolled": 22,
+    "time": "7:00 PM",
+    "description": "Fun and energetic dance workout that gets your heart pumping. No dance experience required - just bring your energy!",
+    "equipment": [],
+    "schedule": [
+      {"day": "Monday", "time": "7:00 PM - 7:50 PM"},
+      {"day": "Wednesday", "time": "7:00 PM - 7:50 PM"},
+      {"day": "Friday", "time": "7:00 PM - 7:50 PM"}
+    ]
+  },
+  {
+    "Id": 6,
+    "name": "Boxing Bootcamp",
+    "type": "Boxing",
+    "trainer": "Mike Chen",
+    "duration": 60,
+    "difficulty": "Intermediate",
+    "capacity": 16,
+    "enrolled": 11,
+    "time": "6:00 AM",
+    "description": "Learn boxing fundamentals while getting an incredible workout. Build strength, coordination, and confidence.",
+    "equipment": ["Boxing Gloves", "Hand Wraps", "Heavy Bag"],
+    "schedule": [
+      {"day": "Tuesday", "time": "6:00 AM - 7:00 AM"},
+      {"day": "Thursday", "time": "6:00 AM - 7:00 AM"},
+      {"day": "Saturday", "time": "8:00 AM - 9:00 AM"}
+    ]
+  },
+  {
+    "Id": 7,
+    "name": "Pilates Core",
+    "type": "Pilates",
+    "trainer": "Emily Rodriguez",
+    "duration": 45,
+    "difficulty": "Beginner",
+    "capacity": 14,
+    "enrolled": 9,
+    "time": "12:00 PM",
+    "description": "Focus on core strength and stability through controlled movements. Improve posture and build deep abdominal strength.",
+    "equipment": ["Pilates Mat", "Resistance Bands"],
+    "schedule": [
+      {"day": "Monday", "time": "12:00 PM - 12:45 PM"},
+      {"day": "Wednesday", "time": "12:00 PM - 12:45 PM"},
+      {"day": "Friday", "time": "12:00 PM - 12:45 PM"}
+    ]
+  },
+  {
+    "Id": 8,
+    "name": "Cycling Intensive",
+    "type": "Cycling",
+    "trainer": "David Kim",
+    "duration": 45,
+    "difficulty": "Advanced",
+    "capacity": 20,
+    "enrolled": 18,
+    "time": "6:30 AM",
+    "description": "High-energy indoor cycling class with interval training and hill climbs. Push your cardiovascular limits.",
+    "equipment": ["Cycling Shoes"],
+    "schedule": [
+      {"day": "Monday", "time": "6:30 AM - 7:15 AM"},
+      {"day": "Wednesday", "time": "6:30 AM - 7:15 AM"},
+      {"day": "Friday", "time": "6:30 AM - 7:15 AM"}
+    ]
+  },
+  {
+    "Id": 9,
+    "name": "Gentle Stretch",
+    "type": "Yoga",
+    "trainer": "Sarah Johnson",
+    "duration": 30,
+    "difficulty": "Beginner",
+    "capacity": 15,
+    "enrolled": 7,
+    "time": "8:30 PM",
+    "description": "Relaxing stretching session perfect for recovery and stress relief. Great for ending your day peacefully.",
+    "equipment": ["Yoga Mat", "Yoga Strap"],
+    "schedule": [
+      {"day": "Tuesday", "time": "8:30 PM - 9:00 PM"},
+      {"day": "Thursday", "time": "8:30 PM - 9:00 PM"},
+      {"day": "Sunday", "time": "7:00 PM - 7:30 PM"}
+    ]
+  },
+  {
+    "Id": 10,
+    "name": "Functional Fitness",
+    "type": "Strength",
+    "trainer": "Lisa Thompson",
+    "duration": 55,
+    "difficulty": "Intermediate",
+    "capacity": 12,
+    "enrolled": 10,
+    "time": "5:00 PM",
+    "description": "Movement-based training that improves your daily activities. Build strength for real-world movements.",
+    "equipment": ["Kettlebells", "Medicine Balls", "TRX Straps"],
+    "schedule": [
+      {"day": "Tuesday", "time": "5:00 PM - 5:55 PM"},
+      {"day": "Thursday", "time": "5:00 PM - 5:55 PM"},
+      {"day": "Saturday", "time": "11:00 AM - 11:55 AM"}
+    ]
+  }
+]

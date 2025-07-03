@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Johnson",
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "certifications": ["NASM-CPT", "RYT-500", "Precision Nutrition"],
+    "specialties": ["Yoga", "Strength Training", "Nutrition Coaching"],
+    "bio": "Sarah is a passionate fitness professional with over 10 years of experience helping clients achieve their wellness goals. She believes in creating sustainable, enjoyable fitness routines that fit into busy lifestyles.",
+    "experience": 10,
+    "classes": ["Morning Power Yoga", "Gentle Stretch", "Strength Foundation"]
+  },
+  {
+    "Id": 2,
+    "name": "Mike Chen",
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+    "certifications": ["ACSM-CPT", "NSCA-CSCS", "USA Boxing"],
+    "specialties": ["HIIT", "Boxing", "Strength Training", "Sports Performance"],
+    "bio": "Mike combines his background in competitive athletics with evidence-based training methods. He specializes in high-intensity workouts and helping athletes reach peak performance.",
+    "experience": 8,
+    "classes": ["HIIT Blast", "Boxing Bootcamp", "Athletic Performance"]
+  },
+  {
+    "Id": 3,
+    "name": "Emily Rodriguez",
+    "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
+    "certifications": ["RYT-200", "Pilates Method Alliance", "Meditation Teacher"],
+    "specialties": ["Yoga", "Pilates", "Meditation", "Stress Management"],
+    "bio": "Emily focuses on the mind-body connection through yoga and pilates. She helps clients find balance, reduce stress, and build both physical and mental strength.",
+    "experience": 7,
+    "classes": ["Zen Flow Yoga", "Pilates Core", "Mindfulness Meditation"]
+  },
+  {
+    "Id": 4,
+    "name": "David Kim",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    "certifications": ["NASM-CPT", "Certified Cycling Instructor", "FMS"],
+    "specialties": ["Strength Training", "Cycling", "Functional Movement", "Injury Prevention"],
+    "bio": "David specializes in functional movement and strength training. His approach focuses on building strength that translates to everyday activities and preventing injuries.",
+    "experience": 12,
+    "classes": ["Strength Foundation", "Cycling Intensive", "Functional Movement"]
+  },
+  {
+    "Id": 5,
+    "name": "Lisa Thompson",
+    "photo": "https://images.unsplash.com/photo-1494790108755-2616c125a502?auto=format&fit=crop&w=400&q=80",
+    "certifications": ["ACE-CPT", "Zumba Instructor", "TRX Certified"],
+    "specialties": ["Dance Fitness", "Functional Training", "Group Fitness", "Weight Loss"],
+    "bio": "Lisa brings energy and fun to every workout. She believes fitness should be enjoyable and helps clients find joy in movement through dance and functional training.",
+    "experience": 6,
+    "classes": ["Cardio Dance", "Functional Fitness", "Zumba"]
+  },
+  {
+    "Id": 6,
+    "name": "Carlos Martinez",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "certifications": ["NASM-CPT", "CrossFit Level 2", "Olympic Lifting"],
+    "specialties": ["CrossFit", "Olympic Lifting", "Strength Training", "Athletic Performance"],
+    "bio": "Carlos is a former competitive weightlifter who now helps others discover their strength potential. He focuses on proper technique and progressive overload to achieve results safely.",
+    "experience": 9,
+    "classes": ["CrossFit", "Olympic Lifting", "Strength & Power"]
+  },
+  {
+    "Id": 7,
+    "name": "Amanda Foster",
+    "photo": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=400&q=80",
+    "certifications": ["ACSM-CPT", "Prenatal Fitness", "Senior Fitness"],
+    "specialties": ["Prenatal Fitness", "Senior Fitness", "Rehabilitation", "Low-Impact Training"],
+    "bio": "Amanda specializes in working with special populations, including pregnant women and seniors. She creates safe, effective programs that accommodate individual needs and limitations.",
+    "experience": 11,
+    "classes": ["Prenatal Fitness", "Senior Strength", "Gentle Movement"]
+  },
+  {
+    "Id": 8,
+    "name": "Ryan Parker",
+    "photo": "https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=400&q=80",
+    "certifications": ["NSCA-CPT", "Kettlebell Instructor", "Mobility Specialist"],
+    "specialties": ["Kettlebell Training", "Mobility", "Corrective Exercise", "Functional Strength"],
+    "bio": "Ryan focuses on movement quality and functional strength. He helps clients move better, feel better, and perform better in their daily activities through corrective exercise and mobility work.",
+    "experience": 8,
+    "classes": ["Kettlebell Fundamentals", "Mobility & Movement", "Corrective Exercise"]
+  }
+]

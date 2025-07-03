@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* React Toastify Styling */
+@import 'react-toastify/dist/ReactToastify.css';
+
+/* Custom Toast Styling */
+.Toastify__toast {
+  @apply rounded-lg shadow-lg !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  padding: 12px 16px !important;
+  min-height: 48px !important;
+  margin-bottom: 8px !important;
+}
+
+.Toastify__toast--success {
+  @apply bg-success text-white !important;
+}
+
+.Toastify__toast--error {
+  @apply bg-error text-white !important;
+}
+
+.Toastify__toast--warning {
+  @apply bg-warning text-white !important;
+}
+
+.Toastify__toast--info {
+  @apply bg-info text-white !important;
+}
+
+.Toastify__toast-container {
+  @apply z-[9999] !important;
+  top: 80px !important;
+  right: 16px !important;
+  width: 320px !important;
+}
+
+.Toastify__progress-bar {
+  @apply bg-white/30 !important;
+  height: 3px !important;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Custom shimmer effect for loading states */
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Custom gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #FF6B35, #FFD23F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom button animations */
+.btn-animate {
+  @apply transition-all duration-200 ease-out;
+}
+
+.btn-animate:hover {
+  @apply scale-[1.02] brightness-110;
+}
+
+.btn-animate:active {
+  @apply scale-[0.98];
+}
+
+/* Custom card hover effects */
+.card-hover {
+  @apply transition-all duration-300 ease-out;
+}
+
+.card-hover:hover {
+  @apply scale-[1.02] shadow-xl;
+}
+
+/* Custom focus states */
+.focus-primary:focus {
+  @apply outline-none ring-2 ring-primary ring-offset-2;
+}
+
+/* Custom disabled states */
+.disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* Athletic gradient backgrounds */
+.gradient-bg-primary {
+  background: linear-gradient(135deg, #FF6B35, #FF8C65);
+}
+
+.gradient-bg-secondary {
+  background: linear-gradient(135deg, #1E3A5F, #2E4A6F);
+}
+
+.gradient-bg-accent {
+  background: linear-gradient(135deg, #FFD23F, #FFE76F);
+}
+
+/* Glass morphism effects */
+.glass {
+  @apply backdrop-blur-lg bg-white/20 border border-white/30;
+}
+
+/* Custom elevation shadows */
+.shadow-custom {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-custom-lg {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom form styling */
+.form-input {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+/* Custom table styling */
+.table-cell {
+  @apply px-4 py-3 text-sm text-gray-700 border-b border-gray-200;
+}
+
+.table-header {
+  @apply px-4 py-3 text-sm font-semibold text-gray-900 bg-gray-50 border-b border-gray-200;
+}
+
+/* Custom loading skeleton */
+.skeleton {
+  @apply animate-pulse bg-gray-200 rounded;
+}
+
+/* Custom capacity indicator */
+.capacity-indicator {
+  @apply h-2 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.capacity-fill {
+  @apply h-full transition-all duration-300 ease-out;
+}
+
+/* Custom difficulty badges */
+.difficulty-badge {
+  @apply inline-flex items-center px-2 py-1 rounded-full text-xs font-medium;
+}
+
+.difficulty-beginner {
+  @apply bg-green-100 text-green-800;
+}
+
+.difficulty-intermediate {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.difficulty-advanced {
+  @apply bg-red-100 text-red-800;
+}
+
+/* Custom workout type badges */
+.workout-type-badge {
+  @apply inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary;
+}
+
+/* Custom trainer card styling */
+.trainer-card {
+  @apply bg-white rounded-xl shadow-custom overflow-hidden transition-all duration-300 hover:shadow-custom-lg hover:scale-[1.02];
+}
+
+/* Custom membership card styling */
+.membership-card {
+  @apply bg-white rounded-xl shadow-custom p-6 transition-all duration-300 hover:shadow-custom-lg hover:scale-[1.02];
+}
+
+.membership-card.featured {
+  @apply ring-2 ring-primary bg-gradient-to-br from-primary/5 to-accent/5;
+}
+
+/* Custom schedule grid */
+.schedule-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4;
+}
+
+/* Custom time slot styling */
+.time-slot {
+  @apply p-4 rounded-lg border border-gray-200 transition-all duration-200 hover:border-primary hover:bg-primary/5 cursor-pointer;
+}
+
+.time-slot.booked {
+  @apply bg-gray-100 border-gray-300 cursor-not-allowed;
+}
+
+.time-slot.available {
+  @apply bg-green-50 border-green-200 hover:bg-green-100;
+}
+
+.time-slot.full {
+  @apply bg-red-50 border-red-200 hover:bg-red-100;
+}
+
+/* Custom filter sidebar */
+.filter-sidebar {
+  @apply w-full lg:w-80 bg-white rounded-xl shadow-custom p-6 h-fit;
+}
+
+/* Custom search bar */
+.search-bar {
+  @apply w-full px-4 py-3 pl-12 pr-4 border border-gray-300 rounded-lg transition-all duration-200 focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none;
+}
+
+/* Custom hero section */
+.hero-section {
+  @apply bg-gradient-to-br from-primary via-primary/90 to-accent/80 text-white py-20 px-4;
+}
+
+/* Custom stats section */
+.stats-section {
+  @apply bg-secondary text-white py-16 px-4;
+}
+
+/* Custom footer */
+.footer {
+  @apply bg-secondary text-white py-12 px-4;
+}
+
+/* Custom mobile menu */
+.mobile-menu {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm z-50 lg:hidden;
+}
+
+.mobile-menu-panel {
+  @apply fixed top-0 right-0 w-80 h-full bg-white shadow-xl transform transition-transform duration-300 ease-out;
+}
+
+.mobile-menu-panel.open {
+  @apply translate-x-0;
+}
+
+.mobile-menu-panel.closed {
+  @apply translate-x-full;
+}
+
+/* Custom class booking modal */
+.booking-modal {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4;
+}
+
+.booking-modal-content {
+  @apply bg-white rounded-xl shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto;
+}
+
+/* Custom progress indicators */
+.progress-indicator {
+  @apply flex items-center space-x-4 mb-6;
+}
+
+.progress-step {
+  @apply w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-all duration-200;
+}
+
+.progress-step.active {
+  @apply bg-primary text-white;
+}
+
+.progress-step.completed {
+  @apply bg-success text-white;
+}
+
+.progress-step.inactive {
+  @apply bg-gray-200 text-gray-600;
+}
+
+.progress-connector {
+  @apply flex-1 h-px bg-gray-200;
+}
+
+.progress-connector.completed {
+  @apply bg-success;
+}
+
+/* Custom capacity indicators */
+.capacity-low {
+  @apply bg-green-500;
+}
+
+.capacity-medium {
+  @apply bg-yellow-500;
+}
+
+.capacity-high {
+  @apply bg-red-500;
+}
+
+/* Custom workout intensity indicators */
+.intensity-low {
+  @apply bg-blue-500;
+}
+
+.intensity-medium {
+  @apply bg-yellow-500;
+}
+
+.intensity-high {
+  @apply bg-red-500;
+}
