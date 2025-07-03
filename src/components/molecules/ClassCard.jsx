@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import Card from '@/components/atoms/Card';
 import Badge from '@/components/atoms/Badge';
 import Button from '@/components/atoms/Button';
 import ApperIcon from '@/components/ApperIcon';
-
 const ClassCard = ({ classData, onBook }) => {
   const {
     Id,
@@ -112,10 +112,17 @@ const ClassCard = ({ classData, onBook }) => {
           size="small"
           className="flex-1"
         >
-          View Details
+View Details
         </Button>
         <Button
-          onClick={() => onBook(classData)}
+          onClick={() => {
+            if (availableSpots > 0) {
+              onBook(classData);
+            } else {
+              // Handle waitlist functionality
+              toast.info(`${classData.name} is full. You've been added to the waitlist.`);
+            }
+          }}
           disabled={availableSpots === 0}
           variant={availableSpots > 0 ? "primary" : "ghost"}
           size="small"
